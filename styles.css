@@ -235,3 +235,41 @@ footer { background: #151c17; color: #c8cdc8; padding: 32px 0 42px; font-family:
   font-size: 1.15rem;
   font-style: italic;
 }
+
+
+.section-divider {
+  background: #24352a;
+  color: #f7f2e7;
+  border-top: 1px solid rgba(255,255,255,.08);
+  border-bottom: 4px solid var(--accent-2);
+}
+.section-divider .section-kicker {
+  color: #d8b47a;
+}
+.section-divider h2 {
+  color: #fffdf8;
+}
+.section-divider p {
+  color: #e0e4df;
+}
+.section-divider-reform {
+  background: #2d3f33;
+}
+.framework-title {
+  margin: 2px 0 10px;
+  font-size: 1.45rem;
+  color: var(--accent);
+}
+.section-developing {
+  background: #efe8dc;
+}
+.developing-idea h3 {
+  margin-bottom: 10px;
+}
+.developing-idea p + p {
+  margin-top: 12px;
+}
+.open-question a {
+  color: var(--accent);
+  font-weight: 700;
+}
