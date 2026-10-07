@@ -227,3 +227,11 @@ footer { background: #151c17; color: #c8cdc8; padding: 32px 0 42px; font-family:
 .evolving-note p + p {
   margin-top: 12px;
 }
+
+
+.purpose-subhead {
+  margin: -6px 0 18px;
+  color: var(--muted);
+  font-size: 1.15rem;
+  font-style: italic;
+}
