@@ -75,12 +75,66 @@ h2 { font-size: clamp(2rem, 4vw, 3.4rem); line-height: 1.1; margin: 0 0 18px; }
   padding: 28px;
   box-shadow: var(--shadow);
 }
+.rule-card-wide { grid-column: 1 / -1; }
 .rule-card h3 { font-size: 1.35rem; margin: 6px 0 12px; }
 .rule-card p { margin: 0; }
+.rule-card p + p { margin-top: 14px; }
 .rule-num { font-size: .74rem; color: var(--accent-2); }
+
+.comparison-wrap {
+  margin: 28px 0;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  background: var(--paper);
+}
+.comparison-table {
+  width: 100%;
+  min-width: 820px;
+  border-collapse: collapse;
+  font-size: .98rem;
+}
+.comparison-table th,
+.comparison-table td {
+  padding: 18px 20px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--line);
+  border-right: 1px solid var(--line);
+}
+.comparison-table th:last-child,
+.comparison-table td:last-child { border-right: 0; }
+.comparison-table tbody tr:last-child th,
+.comparison-table tbody tr:last-child td { border-bottom: 0; }
+.comparison-table thead th {
+  background: #263a2d;
+  color: #fffdf8;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .9rem;
+  line-height: 1.35;
+}
+.comparison-table tbody th {
+  width: 18%;
+  background: #eee8dc;
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .9rem;
+}
+
+.open-question {
+  margin: 28px 0;
+  padding: 24px 26px;
+  background: #f0e6d5;
+  border-left: 5px solid var(--accent-2);
+  border-radius: 0 14px 14px 0;
+}
+.open-question p { margin: 0; }
+.open-question .section-kicker { margin-bottom: 6px; }
 
 .section-quotes { background: #1f2b22; color: #f7f2e7; }
 .section-quotes .section-kicker { color: #d8b47a; }
+.section-quotes h2 { color: #fffdf8; }
 blockquote {
   margin: 0 0 28px;
   padding: 28px 0 28px 28px;
@@ -96,6 +150,11 @@ footer { background: #151c17; color: #c8cdc8; padding: 32px 0 42px; font-family:
 @media (max-width: 760px) {
   .part-heading { grid-template-columns: 1fr; gap: 6px; }
   .rules-grid { grid-template-columns: 1fr; }
+  .rule-card-wide { grid-column: auto; }
   .section { padding: 64px 0; }
   .hero-inner { padding: 80px 0 70px; }
+  .comparison-wrap {
+    margin-left: -4px;
+    margin-right: -4px;
+  }
 }
