@@ -211,3 +211,19 @@ footer { background: #151c17; color: #c8cdc8; padding: 32px 0 42px; font-family:
     grid-template-columns: 1fr;
   }
 }
+
+
+.evolving-note {
+  margin-top: 28px;
+  padding: 24px 26px;
+  background: #fffaf0;
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--accent-2);
+  border-radius: 0 14px 14px 0;
+}
+.evolving-note p {
+  margin: 0;
+}
+.evolving-note p + p {
+  margin-top: 12px;
+}
