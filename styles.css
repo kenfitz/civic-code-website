@@ -173,3 +173,41 @@ footer { background: #151c17; color: #c8cdc8; padding: 32px 0 42px; font-family:
 .development-note p {
   margin: 0;
 }
+
+
+.section-purpose {
+  background: #f7f2e9;
+  border-bottom: 1px solid var(--line);
+}
+.section-purpose p:not(.section-kicker):not(.lead) {
+  font-size: 1.08rem;
+}
+
+.section-foundations {
+  background: #e9e2d5;
+}
+.foundation-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.foundation-card {
+  background: rgba(255,253,248,.72);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 24px 26px;
+}
+.foundation-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.28rem;
+}
+.foundation-card p {
+  margin: 0;
+  color: #424b44;
+}
+
+@media (max-width: 760px) {
+  .foundation-grid {
+    grid-template-columns: 1fr;
+  }
+}
